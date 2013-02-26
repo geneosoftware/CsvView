@@ -240,7 +240,7 @@ class CsvView extends View {
 
 		$delimiter = $this->viewVars['_delimiter'];
 		$enclosure = $this->viewVars['_enclosure'];
-		if (fputcsv($fp, $row, $delimiter, $enclosure) === false) {
+		if (fputcsv($fp, array_map("trim", $row), $delimiter, $enclosure) === false) {
 			return false;
 		}
 
