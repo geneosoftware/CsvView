@@ -1,0 +1,12 @@
+{
+	"name": "geneosoftware/cakephp-csvview",
+	"description": "A CSV View class for CakePHP 2.x",
+	"type": "cakephp-plugin",
+	"license": "MIT",
+	"require": {
+		"composer/installers": "*"
+	},
+	"extra": {
+		"installer-name": "CsvView"
+	}
+}
